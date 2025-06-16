@@ -3,7 +3,7 @@ import React from 'react';
 const Nosotros = () => {
   return (
     <section className="max-w-6xl mx-auto px-4 py-20">
-      <h1 className="text-3xl md:text-6xl font-bold text-center text-mmlpink mb-8">
+      <h1 className="text-3xl md:text-4xl font-bold text-center text-mmlpink mb-8">
         Nosotros
       </h1>
 
