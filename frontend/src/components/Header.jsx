@@ -37,7 +37,7 @@ const Header = () => {
         <div className="md:hidden bg-white shadow-md px-6 pb-4 pt-2 flex flex-col gap-3">
           <Link to="/" onClick={closeMenu} className="text-mmlblack hover:text-mmlpink">Inicio</Link>
           <Link to="/catalogo" onClick={closeMenu} className="text-mmlblack hover:text-mmlpink">Catálogo</Link>
-          <Link to="/quienes-somos" onClick={closeMenu} className="text-mmlblack hover:text-mmlpink">Quiénes Somos</Link>
+          <Link to="/quienes-somos" onClick={closeMenu} className="text-mmlblack hover:text-mmlpink">Nosotros</Link>
           <Link to="/faq" onClick={closeMenu} className="text-mmlblack hover:text-mmlpink">Preguntas Frecuentes</Link>
           <Link to="/contacto" onClick={closeMenu} className="text-mmlblack hover:text-mmlpink">Contacto</Link>
         </div>
