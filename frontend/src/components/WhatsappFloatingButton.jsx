@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 import { FaWhatsapp } from 'react-icons/fa';
 
 const WhatsappFloatingButton = () => {
-  const whatsappNumber = '600116095';
+  const whatsappNumber = '+34600116095';
 
   return (
     <motion.a
