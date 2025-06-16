@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-/* 👇 Opcional: estilos personalizados */
+/* En tu index.css o tailwind.css */
 .scrollbar-hide::-webkit-scrollbar {
   display: none;
 }

@@ -26,9 +26,9 @@ const Carousel = () => {
         Últimos videos vendidos
       </h2>
 
-      {/* Contenedor scrollable horizontal solo en móviles */}
-      <div className="overflow-x-auto md:overflow-x-hidden scrollbar-hide">
-        <div className="flex flex-nowrap md:flex-wrap justify-center gap-6">
+      {/* Scroll horizontal en móviles, centrado en desktop */}
+      <div className="overflow-x-auto scrollbar-hide px-4 md:px-0">
+        <div className="flex flex-nowrap md:flex-wrap justify-start md:justify-center gap-6">
           {videos.map((video) => (
             <motion.div
               key={video.id}
@@ -36,7 +36,7 @@ const Carousel = () => {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.4 }}
               viewport={{ once: true }}
-              className="min-w-[260px] max-w-[300px] bg-white shadow-md rounded-lg overflow-hidden"
+              className="min-w-[260px] max-w-[300px] bg-white shadow-md rounded-lg overflow-hidden shrink-0"
             >
               <video
                 controls
