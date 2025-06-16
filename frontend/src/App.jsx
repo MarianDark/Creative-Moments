@@ -7,6 +7,7 @@ import HeroBanner from "./components/HeroBanner";
 import Carousel from "./components/Carousel"; 
 
 import Catalogo from "./pages/Catalogo";
+import Personalizacion from './pages/Personalizacion';
 import Nosotros from "./pages/Nosotros";
 import FAQ from "./pages/FAQ";
 import Contacto from "./pages/Contacto";
@@ -34,6 +35,7 @@ const App = () => {
               </>
             } />
             <Route path="/catalogo" element={<Catalogo />} />
+            <Route path="/personalizacion" element={<Personalizacion />} />
             <Route path="/quienes-somos" element={<Nosotros />} />
             <Route path="/faq" element={<FAQ />} />
             <Route path="/contacto" element={<Contacto />} />

@@ -1,7 +1,7 @@
-import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
-import { FaBars, FaTimes } from 'react-icons/fa';
-import logo from '../assets/logo.png'; // Asegúrate de poner tu logo aquí
+import React, { useState } from "react";
+import { Link } from "react-router-dom";
+import { FaBars, FaTimes } from "react-icons/fa";
+import logo from "../assets/logo.png"; // Asegúrate de poner tu logo aquí
 
 const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -19,15 +19,49 @@ const Header = () => {
 
         {/* DESKTOP MENU */}
         <nav className="hidden md:flex gap-14">
-          <Link to="/" className="text-mmlblack hover:text-mmlpink font-semibold">Inicio</Link>
-          <Link to="/catalogo" className="text-mmlblack hover:text-mmlpink font-semibold">Catálogo</Link>
-          <Link to="/quienes-somos" className="text-mmlblack hover:text-mmlpink font-semibold">Nosotros</Link>
-          <Link to="/faq" className="text-mmlblack hover:text-mmlpink font-semibold">Preguntas Frecuentes</Link>
-          <Link to="/contacto" className="text-mmlblack hover:text-mmlpink font-semibold">Contacto</Link>
+          <Link
+            to="/"
+            className="text-mmlblack hover:text-mmlpink font-semibold"
+          >
+            Inicio
+          </Link>
+          <Link
+            to="/catalogo"
+            className="text-mmlblack hover:text-mmlpink font-semibold"
+          >
+            Catálogo
+          </Link>
+          <Link
+            to="/personalizacion"
+            className="text-mmlblack hover:text-mmlpink font-semibold"
+          >
+            Personaliza tu video
+          </Link>
+          <Link
+            to="/quienes-somos"
+            className="text-mmlblack hover:text-mmlpink font-semibold"
+          >
+            Nosotros
+          </Link>
+          <Link
+            to="/faq"
+            className="text-mmlblack hover:text-mmlpink font-semibold"
+          >
+            Preguntas Frecuentes
+          </Link>
+          <Link
+            to="/contacto"
+            className="text-mmlblack hover:text-mmlpink font-semibold"
+          >
+            Contacto
+          </Link>
         </nav>
 
         {/* MOBILE BUTTON */}
-        <button className="md:hidden text-2xl text-mmlpink" onClick={toggleMenu}>
+        <button
+          className="md:hidden text-2xl text-mmlpink"
+          onClick={toggleMenu}
+        >
           {menuOpen ? <FaTimes /> : <FaBars />}
         </button>
       </div>
@@ -35,11 +69,41 @@ const Header = () => {
       {/* MOBILE MENU */}
       {menuOpen && (
         <div className="md:hidden bg-white shadow-md px-6 pb-4 pt-2 flex flex-col gap-3">
-          <Link to="/" onClick={closeMenu} className="text-mmlblack hover:text-mmlpink">Inicio</Link>
-          <Link to="/catalogo" onClick={closeMenu} className="text-mmlblack hover:text-mmlpink">Catálogo</Link>
-          <Link to="/quienes-somos" onClick={closeMenu} className="text-mmlblack hover:text-mmlpink">Nosotros</Link>
-          <Link to="/faq" onClick={closeMenu} className="text-mmlblack hover:text-mmlpink">Preguntas Frecuentes</Link>
-          <Link to="/contacto" onClick={closeMenu} className="text-mmlblack hover:text-mmlpink">Contacto</Link>
+          <Link
+            to="/"
+            onClick={closeMenu}
+            className="text-mmlblack hover:text-mmlpink"
+          >
+            Inicio
+          </Link>
+          <Link
+            to="/catalogo"
+            onClick={closeMenu}
+            className="text-mmlblack hover:text-mmlpink"
+          >
+            Catálogo
+          </Link>
+          <Link
+            to="/quienes-somos"
+            onClick={closeMenu}
+            className="text-mmlblack hover:text-mmlpink"
+          >
+            Nosotros
+          </Link>
+          <Link
+            to="/faq"
+            onClick={closeMenu}
+            className="text-mmlblack hover:text-mmlpink"
+          >
+            Preguntas Frecuentes
+          </Link>
+          <Link
+            to="/contacto"
+            onClick={closeMenu}
+            className="text-mmlblack hover:text-mmlpink"
+          >
+            Contacto
+          </Link>
         </div>
       )}
     </header>
