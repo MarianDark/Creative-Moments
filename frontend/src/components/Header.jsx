@@ -18,10 +18,10 @@ const Header = () => {
         </Link>
 
         {/* DESKTOP MENU */}
-        <nav className="hidden md:flex gap-6">
+        <nav className="hidden md:flex gap-14">
           <Link to="/" className="text-mmlblack hover:text-mmlpink font-semibold">Inicio</Link>
           <Link to="/catalogo" className="text-mmlblack hover:text-mmlpink font-semibold">Catálogo</Link>
-          <Link to="/quienes-somos" className="text-mmlblack hover:text-mmlpink font-semibold">Quiénes Somos</Link>
+          <Link to="/quienes-somos" className="text-mmlblack hover:text-mmlpink font-semibold">Nosotros</Link>
           <Link to="/faq" className="text-mmlblack hover:text-mmlpink font-semibold">Preguntas Frecuentes</Link>
           <Link to="/contacto" className="text-mmlblack hover:text-mmlpink font-semibold">Contacto</Link>
         </nav>
